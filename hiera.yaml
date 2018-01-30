@@ -1,0 +1,7 @@
+# coop-fastly/hiera.yaml
+---
+version: 5
+defaults:
+  data_hash: fastly_data
+hierarchy:
+  - name: 'common'

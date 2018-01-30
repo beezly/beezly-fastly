@@ -1,0 +1,20 @@
+{
+  "name": "beezly-fastly",
+  "version": "0.1.0",
+  "author": "Andrew Beresford",
+  "summary": "Provides access to Fastly endpoint API",
+  "license": "Apache-2.0",
+  "source": "http://github.com/beezly/beezly-fastly",
+  "project_page": "http://github.com/beezly/beezly-fastly",
+  "issues_url": "http://github.com/beezly/beezly-fastly/issues",
+  "dependencies": [
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.0.0 < 6.0.0"
+    }
+  ],
+  "data_provider": null
+}
+

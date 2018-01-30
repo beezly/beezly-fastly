@@ -1,0 +1,22 @@
+sudo: false
+language: ruby
+bundler_args: "--without development"
+script:
+  - cat Gemfile.lock
+  - bundle list
+  - bundle exec rake $CHECK
+cache: bundler
+matrix:
+  include:
+    - rvm: 2.4.3
+      env: CHECK=spec:coverage
+    - rvm: 2.4.3
+      env: CHECK=rubocop
+    - rvm: 2.1.9
+      env: CHECK=acceptance:local
+    - rvm: 2.1.9
+      env: CHECK=spec
+    # license_finder requires all gems installed
+    - rvm: 2.1.9
+      env: CHECK=license_finder
+      bundler_args: ""

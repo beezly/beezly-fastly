@@ -13,10 +13,6 @@ matrix:
     - rvm: 2.4.3
       env: CHECK=rubocop
     - rvm: 2.1.9
-      env: CHECK=acceptance:local
+      env: CHECK=beaker
     - rvm: 2.1.9
       env: CHECK=spec
-    # license_finder requires all gems installed
-    - rvm: 2.1.9
-      env: CHECK=license_finder
-      bundler_args: ""

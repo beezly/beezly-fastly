@@ -1,4 +1,4 @@
-# fastly
+# beezly-fastly
 
 #### Table of Contents
 

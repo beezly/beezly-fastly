@@ -9,7 +9,7 @@ cache: bundler
 matrix:
   include:
     - rvm: 2.4.3
-      env: CHECK=spec:coverage
+      env: CHECK=spec
     - rvm: 2.4.3
       env: CHECK=rubocop
     - rvm: 2.1.9

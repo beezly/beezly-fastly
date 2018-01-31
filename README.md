@@ -32,6 +32,11 @@ include fastly
 fastly_public_ips = $fastly::addresses
 ```
 
+1. Call the `fastly::public_ip_list` function
+```puppet
+fastly_public_ips = fastly::public_ip_list()
+```
+
 The "examples" directory has examples of both methods of using the data source.
 
 ## Reference

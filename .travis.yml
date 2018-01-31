@@ -17,6 +17,10 @@ matrix:
         - CHECK=test
         - PUPPET_VERSION='~> 4.9.0'
     - rvm: 2.4.3
+      env:
+        - CHECK=test
+        - PUPPET_VERSION='~> 4.7.0'
+    - rvm: 2.4.3
       env: 
         - CHECK=beaker
         - PUPPET_VERSION='~> 5.3.0'
@@ -24,3 +28,7 @@ matrix:
       env:
         - CHECK=beaker
         - PUPPET_VERSION='~> 4.9.0'
+    - rvm: 2.4.3
+      env:
+        - CHECK=beaker
+        - PUPPET_VERSION='~> 4.7.0'

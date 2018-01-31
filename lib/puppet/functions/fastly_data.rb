@@ -6,11 +6,6 @@ Puppet::Functions.create_function(:fastly_data) do
   end
 
   def fastly_data(_options, _context)
-    data = JSON.parse(Net::HTTP.get(URI('https://api.fastly.com/public-ip-list')))
-    data['fastly::addresses'] = data.delete('addresses')
-    data
-  rescue JSON::ParserError => ex
-    raise Puppet::DataBinding::LookupError,
-          "Unable to parse response from Fastly: #{ex}"
+    call_function('fastly::public_ip_list')
   end
 end

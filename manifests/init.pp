@@ -43,6 +43,6 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class fastly (
-  Array[String] $addresses = undef,
+  Optional[Array[String]] $addresses = undef,
 ){
 }

@@ -1,6 +1,6 @@
 {
   "name": "beezly-fastly",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Andrew Beresford",
   "summary": "Provides access to Fastly endpoint API",
   "license": "Apache-2.0",

@@ -21,20 +21,20 @@ the fastly class in your module.
 
 ## Usage
 
-1. Use a lookup function.
+1. Use a lookup function. (works in Puppet 4.9 onwards)
 ```puppet
 lookup('fastly::addresses')
 ```
 
-1. Include the class and refer to a variable.
+1. Include the class and refer to a variable. (works in Puppet 4.9 onwards)
 ```puppet
 include fastly
-fastly_public_ips = $fastly::addresses
+$fastly_public_ips = $fastly::addresses
 ```
 
-1. Call the `fastly::public_ip_list` function
+1. Call the `fastly::public_ip_list` function (works in Puppet 4.7 onwards)
 ```puppet
-fastly_public_ips = fastly::public_ip_list()
+$fastly_public_ips = fastly::public_ip_list()
 ```
 
 The "examples" directory has examples of both methods of using the data source.

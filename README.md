@@ -3,10 +3,10 @@
 #### Table of Contents
 
 1. [Description](#description)
-1. [Setup - The basics of getting started with fastly](#setup)
+2. [Setup - The basics of getting started with fastly](#setup)
     * [Beginning with fastly](#beginning-with-fastly)
-1. [Usage - Configuration options and additional functionality](#usage)
-1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+3. [Usage - Configuration options and additional functionality](#usage)
+4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 
 ## Description
 
@@ -26,13 +26,13 @@ the fastly class in your module.
 lookup('fastly::addresses')
 ```
 
-1. Include the class and refer to a variable. (works in Puppet 4.9 onwards)
+2. Include the class and refer to a variable. (works in Puppet 4.9 onwards)
 ```puppet
 include fastly
 $fastly_public_ips = $fastly::addresses
 ```
 
-1. Call the `fastly::public_ip_list` function (works in Puppet 4.7 onwards)
+3. Call the `fastly::public_ip_list` function (works in Puppet 4.7 onwards)
 ```puppet
 $fastly_public_ips = fastly::public_ip_list()
 ```
